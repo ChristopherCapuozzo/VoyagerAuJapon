@@ -204,22 +204,20 @@
                   </div>
                   <div id="bloc-3-right" class="col-md-4 col-sm-12">
                       <div class="card p-3">
-                          <img class="card-img-top rounded-3" src="img/grece.jpeg" alt="Card image cap">
+                          <img class="card-img-top rounded-3" src="img/tokyo.jpg" alt="Card image cap">
                           <div class="card-body">
-                              <h5 class="card-title">Tokyo</h5>
-                              <p class="card-text">14 au 21 Juin 2022 | une offre exceptionelle</p>
-                              <div class="mt-3 d-flex">
+                              <h5 class="card-title text-size-25">Tokyo</h5>
+                              <p class="card-text">Vol de 13 h 50 min, à partir de 672 €</p>
+                              <div class="mt-2 d-flex">
                                   <i class="fab fa-facebook-square fa-3x m-lg-2"></i>
                                   <i class="fab fa-twitter-square fa-3x m-lg-2"></i>
                                   <i class="fab fa-instagram-square fa-3x m-lg-2"></i>
                               </div>
-                              <div class="mt-3 d-flex justify-content-between align-items-center">
-                                  <i class="fas fa-city fa-2x"></i>
+                              <div class="mt-2 d-flex justify-content-between align-items-center">
                                   <p class="bloc-3-carte-texte">25 personnes donnent leurs avis</p>
-                                  <i class="far fa-heart float-end fa-2x"></i>
                               </div>
       
-                              <a href="#" class="mt-3 btn btn-outline-success">Plus d'info</a>
+                              <a href="#" class="mt-2 btn btn-outline-success">Plus d'info</a>
                           </div>
                       </div>
                   </div>
@@ -227,10 +225,137 @@
           </section>
       </div>
       
+      <div class="mt-lg-5 container-fluid">
+        <section id="bloc-5" class="container">
+            <!--Decoupe du conteneur comme le bloc precedent-->
+            <div class="row">
+                <!--Ici 2 bloc de 6-->
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="titre-h5 text-color-purple">AVIS DE CLIENTS</h5>
+                    <h2 class="titre-h2 text-color-pink">QUE PENSE NOS CLIENTS ?</h2>
+                    <img class="padding-top-5" src="img/points.png" alt="point" title="Voyage.com">
+                </div>
+    
+                <!--Ajout d'un slider bootstrap + 3 photos en boucle infinie-->
+                <div class="col-md-6 col-sm-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/slider1.png" class="d-block w-100" alt="avis 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slider2.png" class="d-block w-100" alt="avis 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slider3.png" class="d-block w-100" alt="avis 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Précédent</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Suivant</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+
+      <div class="mt-lg-5 container-fluid">
+        <section id="bloc-6">
+            <!--Decoupe du bloc 3*4 = 12 + achaque fois une images-->
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-12">
+                    <img src="img/1.png" alt="marque 1">
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <img src="img/2.png" alt="marque 2">
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <img src="img/3.png" alt="marque 3">
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <img src="img/4.png" alt="marque 4">
+                </div>
+            </div>
+        </section>
+      </div>
+    
+      <div class="container">
+        <!--Appel d'une image sur id block 7-->
+        <section id="bloc-7">
+            <div class="form-content text-center">
+                <!--Un titre centrer-->
+                <h3 class="titre-h3 text-color-purple">
+                    Newsletter, abbonez vous es recevez les dernier info !
+                </h3>
+                <!--Un formulaire bootsrap + input (pour entrer son email) + un bouton bootstrap -->
+                <form action="" method="get" class="d-flex justify-content-center align-items-center">
+                    <input type="email" required class="form-control" id="newsletter" name="newsletter" placeholder="email@email.com"/>
+                    <button id="btn-form" class="btn btn-outline-success mx-3">S'incrire</button>
+                </form>
+            </div>
+        </section>
+      </div>
 
 
+      <footer class="mt-lg-5 container-fluid color-gray padding-top-1">
+        <!--ici display flex + justify content space around pour espacer les 3 blocs horizontalement-->
+            <div id="footer-parent" class="d-flex justify-content-around align-items-center">
+    
+                <div class="footer-left">
+                    <img src="img/japan.png" alt="" title=""/>
+                    <h5 class="titre-h5">Visiter le Japon</h5>
+                </div>
+    
+                <div class="footer-center d-flex">
+                    <div class="footer-center-left padding-right-5">
+                        <p><strong>Voyage.com</strong></p>
+                        <p>Services</p>
+                        <p>Offres</p>
+                        <p>Destination</p>
+                    </div>
+    
+    
+                <div class="footer-center-right padding-left-30">
+                    <p><strong>Contact</strong></p>
+                    <p>Connexion</p>
+                    <p>Inscription</p>
+                </div>
+    
+            </div>
+    
+            <div class="footer-right">
+                <p>Télécharger l'application Voyage.com</p>
+                <div class="double-bouton">
+    
+                    <button class="btn-apple align-items-center">
+                        <img src="img/logo_apple.svg" alt="apple store" title="Telecharger sur apple store"/>
+                        APPLE STORE
+                    </button>
+    
+                    <button class="btn-google align-items-center">
+                        <img src="img/logo_google_play.svg" alt="play store" title="Telecharger sur play store"/>
+                        PLAY STORE
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center padding-bottom-1">
+          <h6 class="titre-h6">japan.com Copyright 2022</h6>
+        </div>
+      </footer>
 
+      
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
